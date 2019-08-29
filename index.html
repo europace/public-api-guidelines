@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Asciidoctor 1.5.3">
+  <title>Anträge auslesen API</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+  <link rel="stylesheet" href="assets/.css">
+  </head>
+<body class="article toc2 toc-left">
+<div id="header">
+  <h1>Europace Public RESTful API Guidelines</h1>
+  <div id="toc" class="toc2">
+    <div id="toctitle">Table of Contents</div>
+    <ul class="sectlevel1">
+      <li>
+        <a href="#_introduction">1. Introduction</a>
+        <ul class="sectlevel2">
+          <li><a href="#_conventions">Conventions Used in These Guidelines</a></li>
+          <li><a href="#_specificInformation">Europace specific information</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="content">
+  <div class="sect1">
+    <h2 id="_overview">1. Introduction</h2>
+    <div class="sectionbody">
+      <div class="paragraph">
+        <p>Europace provides access to it’s core business functionality via RESTful APIs with a JSON payload. These APIs are engineered, deployed, operated and maintained as microservices in a distributed environment. Designing high-quality, long-lasting and easy to use APIs is crucial to us because of the increasing requirements to include Europace platform functionality into 3rd party software.</p>
+        <p>Regarding this, we follow “API First” principle as one of our most important engineering goals. API Microservices are first defined outside of the code and ideally reviewed by peers before implementation begins.</p>
+        <p>API First embraces quality related standards and a high quality review procedure. With following these principles we aim to create APIs:</p>
+        <ul>
+          <li>easy to understand and learn</li>
+          <li>general and abstracted from specific implementation and use cases</li>
+          <li>robust and easy to use</li>
+          <li>with a common look and feel</li>
+          <li>with a consistent RESTful style and syntax</li>
+        </ul>
+        <p>Ideally, all Europace APIs will look like the same author created them.</p>
+      </div>
+      <div class="sect2">
+        <h3 id="_conventions">Conventions Used in These Guidelines</h3>
+        <div class="paragraph">
+          <p>The requirement level keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" used in this document (case insensitive) are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119.</a></p>
+        </div>
+      </div>
+      <div class="sect2">
+        <h3 id="_specificInformation">Europace specific information</h3>
+        <div class="paragraph">
+          <p>The purpose of our "RESTful API guidelines" is to define standards to successfully establish "consistent API look and feel" quality. This document is drafted and owned by the Europace API developers. Teams are responsible to fulfill these guidelines during API development and are encouraged to contribute to guideline evolution via pull requests.</p>
+          <p>These guidelines will, to some extent, remain work in progress as our work evolves, but teams can confidently follow and trust them.</p>
+          <p>In case guidelines are changing, following rules apply:</p>
+          <ul>
+            <li>existing APIs don’t have to be changed, but we recommend it</li>
+            <li>clients of existing APIs have to cope with these APIs based on outdated rules</li>
+            <li>new APIs have to respect the current guidelines</li>
+          </ul>
+          <p>Furthermore you should keep in mind that once an API becomes public externally available, it has to be re-reviewed and changed according to current guidelines - for sake of overall consistency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

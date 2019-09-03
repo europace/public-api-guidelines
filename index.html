@@ -1720,7 +1720,7 @@
       <div class="sect2">
         <h3 id="_http_status_codes_5"><span class="red">Must:</span> Use Problem JSON</h3>
         <div class="paragraph">
-          <p><a href="https://tools.ietf.org/html/rfc7807" target="_blank">RFC 7807</a> defines a Problem JSON object and the media type <span class="emphasized">application/problem+json</span>. An API operation should return this object (together with a suitable status code) when any problem occurred on processing the request and more details can be provided aside of the status code itself, no matter if  it was caused by the client or the server (i.e. both for <a href="#_client_side_error_codes"><span class="emphasized">4xx</span></a> or <a href="#_server_side_error_codes"><span class="emphasized">5xx</span> error codes).</p>
+          <p><a href="https://tools.ietf.org/html/rfc7807" target="_blank">RFC 7807</a> defines a Problem JSON object and the media type <span class="emphasized">application/problem+json</span>. An API operation should return this object (together with a suitable status code) when any problem occurred on processing the request and more details can be provided aside of the status code itself, no matter if  it was caused by the client or the server (i.e. both for <a href="#_client_side_error_codes"><span class="emphasized">4xx</span></a> or <a href="#_server_side_error_codes"><span class="emphasized">5xx</span></a> error codes).</p>
           <p>The Open API schema definition of the Problem JSON object can be found on github. You can reference it by using:</p>
           <p class="preformatted-custom">
             <code style="padding:0">

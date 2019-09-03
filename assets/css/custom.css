@@ -1,0 +1,34 @@
+.emphasized {
+  font-weight: bold;
+  background-color:#efefef;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.preformatted-custom {
+  line-height: 0.8;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.yellow {
+  color: #997700;
+}
+
+.indented-custom {
+  padding-left: 4em;
+}
+
+h1,h2,h3,h4 {
+  color: #222222;
+}
+
+.placeholder {
+  background-color: #e99b8f;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none!important;
+}

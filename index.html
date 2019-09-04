@@ -429,7 +429,7 @@
       <div class="sect2">
         <h3 id="_meta_2"><span class="red">Must:</span> Use Semantic Versioning</h3>
         <div class="paragraph">
-          <p>OpenAPI allows to specify the API specification version in <span class="emphasized">#/info/version</span>. To share a common semantic of version information we expect API designers to comply to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning 2.0</a> rules <b>1</b> to <b>8</b> and <b>11</b> restricted to the format &lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt; for versions as follows:</p>
+          <p>OpenAPI allows to specify the API specification version in <span class="emphasized">#/info/version</span>. To share a common semantic of version information we expect API designers to comply to <a href="https://semver.org/spec/v2.0.0.html" target="_blank">Semantic Versioning 2.0</a> rules <b>1</b> to <b>8</b> and <b>11</b> restricted to the format &lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt; for versions as follows:</p>
           <ul>
             <li>Increment the <b>MAJOR</b> version when you make incompatible API changes after having aligned this changes with consumers,</li>
             <li>Increment the <b>MINOR</b> version when you add new functionality in a backwards-compatible manner, and</li>
@@ -437,9 +437,9 @@
           </ul>
           <p><b>Additional Notes:</b></p>
           <ul>
-            <li><b>Pre-release</b> versions (<a href="https://semver.org/spec/v2.0.0.html/#spec-item-9">rule 9</a>) and <b>build metadata</b> (<a href="https://semver.org/spec/v2.0.0.html#spec-item-10">rule 10</a>) must not be used in API version information.</li>
+            <li><b>Pre-release</b> versions (<a href="https://semver.org/spec/v2.0.0.html#spec-item-9" target="_blank">rule 9</a>) and <b>build metadata</b> (<a href="https://semver.org/spec/v2.0.0.html#spec-item-10" target="_blank">rule 10</a>) must not be used in API version information.</li>
             <li>While patch versions are useful for fixing typos etc, API designers are free to decide whether they increment it or no</li>
-            <li>API designers should consider to use API version <b>0.y.z</b> (<a href="https://semver.org/spec/v2.0.0.html#spec-item-4">rule 4</a>) for initial API design.</li>
+            <li>API designers should consider to use API version <b>0.y.z</b> (<a href="https://semver.org/spec/v2.0.0.html#spec-item-4" target="_blank">rule 4</a>) for initial API design.</li>
           </ul>
           <p>Example:</p>
           <p class="preformatted-custom">
@@ -628,7 +628,7 @@
       <div class="sect2">
         <h3 id="_compatibility_6"><span class="red">Must:</span> Treat Open API Definitions As Open For Extension By Default</h3>
         <div class="paragraph">
-          <p>The Open API 2.0 specification is not specific on default extensibility of objects. JSON-Schema keywords are redefined related to extensibility, e.g. <span class="emphasized">additionalProperties</span>. To follow our overall compatibility guidelines, we consider Open API object definitions open for extension by default as per <a href="http://json-schema.org/latest/json-schema-validation.html#rfc.section.5.18" target="_blank">Section 5.18 "additionalProperties"</a> of JSON-Schema.</p>
+          <p>The Open API 2.0 specification is not specific on default extensibility of objects. JSON-Schema keywords are redefined related to extensibility, e.g. <span class="emphasized">additionalProperties</span>. To follow our overall compatibility guidelines, we consider Open API object definitions open for extension by default as per <a href="http://json-schema.org/latest/json-schema-validation.html#rfc.section.6.5.6" target="_blank">Section 6.5.6 "additionalProperties"</a> of JSON-Schema.</p>
           <p>When it comes to Open API 2.0, this means an <span class="emphasized">additionalProperties</span> declaration is not required and even discouraged to make an object definition extensible:</p>
           <ul>
             <li>API clients consuming data must not assume that objects are closed for extension in the absence of an <span class="emphasized">additionalProperties</span> declaration and must ignore fields sent by the server they cannot process. This allows API servers to evolve their data formats.</li>
@@ -1855,8 +1855,8 @@
             <li>Provide efficient methods to prefill and update caches, e.g. as follows:
               <ul>
                 <li>In general, you should support <a href="#_common_headers_5"></b><span class="emphasized">ETag</span> Together With <span class="emphasized">If-Match</span>/<span class="emphasized">If-None-Match</span> Header</a> on all cacheable endpoints.</li>
-                <li>For larger data items support <a href="#_http_method_head"><span class="emphasized">HEAD</span></a> requests or more efficient <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests with <span class="emphasized">If-None-Match</span> header to check for updates.</li>
-                <li>For small data sets provide full collection <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests supporting <a href="https://tools.ietf.org/html/rfc7232#section-2.3" target="_blank"><span class="emphasized">ETag</span></a>, as well as <a href="#_http_method_head"><span class="emphasized">HEAD</span></a> requests or <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests with <span class="emphasized">If-None-Match</span> to check for updates.</li>
+                <li>For larger data items support <a href="#_http_method_head"><span class="emphasized">HEAD</span></a> requests or more efficient <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests with <a href="https://tools.ietf.org/html/rfc7232#section-3.2" target="_blank"><span class="emphasized">If-None-Match</span></a> header to check for updates.</li>
+                <li>For small data sets provide full collection <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests supporting <a href="https://tools.ietf.org/html/rfc7232#section-2.3" target="_blank"><span class="emphasized">ETag</span></a>, as well as <a href="#_http_method_head"><span class="emphasized">HEAD</span></a> requests or <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests with <a href="https://tools.ietf.org/html/rfc7232#section-3.2" target="_blank"><span class="emphasized">If-None-Match</span></a> to check for updates.</li>
                 <li>For medium sized data sets provide full collection <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests supporting <a href="https://tools.ietf.org/html/rfc7232#section-2.3" target="_blank"><span class="emphasized">ETag</span></a> together with <a href="#_pagination">Pagination</a> and <span class="emphasized">&lt;entity-tag&gt;</span> filtering <a href="#_http_method_get"><span class="emphasized">GET</span></a> requests for limiting the response to changes since the provided <span class="emphasized">&lt;entity-tag&gt;</span>. <b>Note:</b> this is not supported by generic client and proxy caches on HTTP layer.</li>
               </ul>
             </li>

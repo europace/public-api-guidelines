@@ -7,6 +7,6 @@ The Guidelines are currently in this Repo as a HTML document. You can view it [h
 
 # Ab hier nur Test
 
-## <span style="color:red">MUST</span>: Treat Open API Definitions As Open For Extension By Default
+## <span style="color:red">MUST</span> : Treat Open API Definitions As Open For Extension By Default
+<span style="color:red">MUST</span> Lorem Ipsum dolor met
 
-Lorem Ipsum dolor met

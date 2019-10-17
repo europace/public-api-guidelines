@@ -10,3 +10,4 @@ The Guidelines are currently in this Repo as a HTML document. You can view it [h
 ## <span style="color:red">MUST</span> : Treat Open API Definitions As Open For Extension By Default
 <span style="color:red">MUST</span> Lorem Ipsum dolor met
 
+<font color='red'>test blue color font</font>
